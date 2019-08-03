@@ -1,0 +1,142 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.screen {
+    width: 100%;
+}
+
+.thumbnail{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    min-height: 66px;
+    cursor: pointer;
+}
+
+.account-images{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.counters{
+    position:relative;
+    font-size: 13px;
+    color: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mt-0{
+    font-size: 0.75rem;
+    color:white;
+    overflow:hidden;
+}
+
+.mt-price {
+    background-color:black;
+    position: absolute;
+    bottom:0;
+    font-size: 1.25rem;
+    left: 0;
+    text-align: center;
+    width:100%;
+}
+
+.mt-title {
+    font-size:1.15rem;
+}
+
+.answCont{
+    display: block;
+    float: right;
+    margin-right: 150px;
+}
+
+.media
+{
+    position:relative;
+    height: 210px;
+    min-width: 120px;
+    float: left;
+    border:1px solid black;
+    margin-top: 5px;
+    margin-left:12px;
+    margin-right:10px;
+    background: #5c5392;
+    width:22%;
+    background-image: url("https://beraaccounts.com/wp-content/uploads/2019/05/WoWScrnShot_053119_173321.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.media a
+{
+    padding: 4px 4px;
+    position:inherit;
+    z-index: 100;
+    background-color:rgba(26, 43, 117, 0.596);
+    width: 100%;
+    height:100%;
+}
+
+.media a:hover
+{
+    background-color:rgba(26, 43, 117, 0.774);
+}
+.card
+{
+    min-width: 120px;
+}
+
+.answers{
+    font-size: 15px;
+    height: 70px;
+    width: 70px;
+    margin-top: 2%;
+    margin-right: 30px;
+    text-align: center;
+
+    p{
+        margin-top: 9%;
+    }
+}
+
+.answer_count{
+    font-size: 14px;
+}
+
+.status {
+    &.unanswered{
+        border: none;
+    }
+    &.answered{
+        border: 1px solid $green;
+    }
+    &.answered-accepted{
+        border: 1px solid gray;
+        background: $green;
+        color: $white;
+    }
+}
+
+.fa{
+    list-style-type: none;
+    width: 260px;
+    font-size:17px;
+    padding:8px;
+    margin: 3px auto;
+    border:1px solid black;
+    background:$transGreen;
+}
